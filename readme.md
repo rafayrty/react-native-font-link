@@ -5,9 +5,9 @@ to install just run the npx command inside your project directory to link your f
 
 The React Native Font Link Library assumes the default directory to be /assets/fonts if not you can specify your own by providing --fonts
 
-**For RN > 0.69**
 
 ## Usage
+**For RN > 0.69**
 ```bash
 npx react-native-font-link
 
