@@ -38,9 +38,9 @@ fs.writeFile('react-native.config.js', reactNativeConfigFile, function (err) {
   });
 
   const { exec } = require('child_process');
-exec('npx react-native link', (err, stdout, stderr) => {
+exec('npx react-native-asset', (err, stdout, stderr) => {
   if (err) {
-    console.error("Unable to execute the command npx react-native link");
+    console.error("Unable to execute the command execute npx react-native link instead");
     // node couldn't execute the command
     return;
   }
