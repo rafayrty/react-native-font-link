@@ -12,7 +12,7 @@ The React Native Font Link Library assumes the default directory to be /assets/f
 npx react-native-font-link
 
 #Specifiying Font Directory
-npx react-native-font-link --fonts="/custom_assets/fonts"
+npx react-native-font-link --fonts="/fonts"
 
 ```
 
