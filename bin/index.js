@@ -1,10 +1,13 @@
 #! /usr/bin/env node
 const fs = require("fs");
 const args = process.argv.slice(2, process.argv.length);
-const args_path = args[0].substring(args[0].indexOf("=") + 1);
+let args_path = undefined;
+if (args[0] !== undefined) {
+  args_path = args[0].substring(args[0].indexOf("=") + 1);
+}
 let font_path = "/assets/fonts";
 let fonts = process.cwd() + font_path;
-if (args[0] !== undefined) {
+if (args_path !== undefined) {
   font_path = args_path;
   fonts = process.cwd() + font_path;
 }
